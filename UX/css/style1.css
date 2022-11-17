@@ -1,0 +1,781 @@
+:root {
+    /*--green: #5AC528;*/
+    --green: mediumseagreen;
+    --yellow: #FAEC48;
+    --dimgrey: #686868;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #1D1E22;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+/* https://thegraph.com/en/ */
+.text-glow {
+    text-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+/* https://rareblocks.xyz/ */
+.text-gradient {
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pink_button {
+    background-color: #c43ad6;
+    padding: 10px;
+}
+
+.blue_button {
+    background-color:#0066ff;
+    padding: 10px;
+}
+
+.general_button {
+    background-color:#ffffff;
+    padding: 10px;
+}
+
+/*
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+*/
+
+p {
+    font-size: 18px;
+}
+
+.image-sizing {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ============= Generic CSS ============== */
+.section-title {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.section-title h2 {
+    position: relative;
+    text-align: center;
+    color: --dimgrey;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: --dimgrey;
+    margin-left: -30px;
+}
+
+.section-title p {
+    color: --dimgrey;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 45px;
+}
+
+/* =========== Navigation ============ */
+.navbar-default {
+    background-color: transparent;
+    border-color: --dimgrey;
+    z-index: 110;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: --dimgrey;
+    font-family: "Raleway", sans-serif;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    color: black;
+}
+
+.navbar-brand {
+    padding: 9px 15px;
+}
+
+.navbar-brand img {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+    color: black;
+}
+
+/* =========== Header ============ */
+.header {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.header-overlay {
+    background-color: var(--green);
+    padding-bottom: 10px;
+    color: --dimgrey;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header-text h1 {
+    color: --dimgrey;
+    color: --dimgrey;
+    /*#686868*/
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 45px;
+    padding-top: 30px;
+    /*text-transform: uppercase;*/
+}
+
+.header-text h2 {
+    color: --dimgrey;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.header-text p {
+    color: --dimgrey;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.header-btns {
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+/* ========= The Apps ============= */
+.theapps {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+}
+
+.theapps-overlay {
+    background-color: var(--green);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: --dimgrey;
+}
+
+/* ========= Youtube videos and captions ============= */
+figure {
+    border: 0px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+figcaption {
+    color: --dimgrey;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container-iframe {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Then style the iframe to fit in the container div with full height and width */
+
+/*
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+
+/* ========= WHYLEARNVIDEO ============= */
+.whylearnvideo {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+    background-color: var(--green);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: --dimgrey;
+}
+
+/* ========= Why leVocab ============= */
+.whytherapy {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+
+    background-color: var(--green);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: --dimgrey;
+}
+
+/* ========= Features ============= */
+.features-inner-wrapper {
+    padding-top: 10px;
+    /*padding-bottom: 70px;*/
+}
+
+.left-feature-item {
+    position: relative;
+    padding-right: 90px;
+    margin-bottom: 65px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.left-feature-item-icon {
+    position: absolute;
+    right: 0;
+    top: -8px;
+    font-size: 40px;
+    color: --dimgrey;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+.left-feature-item h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    color: --dimgrey;
+}
+
+.left-feature-item p {
+    color: --dimgrey;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.feature-iphone img {
+    width: 100%;
+    padding-top: 35px;
+}
+
+.right-feature-item {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 65px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.right-feature-item-icon {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    font-size: 40px;
+    color: --dimgrey;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+.right-feature-item h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    /*color: #0066ff;*/
+    color: --dimgrey;
+}
+
+.right-feature-item p {
+    color: --dimgrey;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/************blog*******************/
+.blog {
+    background-color: var(--green);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+    color: --dimgrey;
+    padding-bottom: 50px;
+}
+
+.blog h3 {
+    color: --dimgrey;
+}
+
+.blog a:link {
+    text-decoration: none;
+    color: --dimgrey;
+    /*border-bottom: #0066ff 0.1em solid;*/
+    border-bottom: --dimgrey 0.1em solid;
+    font-size: 16px;
+}
+
+/************Blogpost*******************/
+.blogpost {
+    /*background-color: rgba(143, 186, 239, 1);*/
+    background-color: #55F809;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+}
+
+.blogpost-text {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: --dimgrey;
+}
+
+.blogpost-footnote {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: --dimgrey;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blogpost-text {
+    float: left;
+    color: --dimgrey;
+}
+
+.blogpost-back {
+    position: relative;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.blogpost-back-icon {
+    position: absolute;
+    left: 0;
+    color: --dimgrey;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.blogpost-back h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    color: --dimgrey;
+}
+
+.blogpost-back p {
+    color: --dimgrey;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.blogpost-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/************where*******************/
+.where {
+    background-color: var(--green);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+    color: --dimgrey;
+    padding-bottom: 50px;
+}
+
+.where h3 {
+    color: --dimgrey;
+}
+
+.where a:link {
+    text-decoration: none;
+    color: --dimgrey;
+    /*border-bottom: #0066ff 0.1em solid;*/
+    border-bottom: --dimgrey 0.1em solid;
+    font-size: 16px;
+}
+
+/* ========= About Us ============= */
+.aboutsiobhan {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+    background-color: var(--green);
+}
+
+.aboutsiobhan-overlay {
+    background-color: var(--green);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carousel .carousel-indicators li {
+    background-color: var(--green);
+}
+
+.carousel .carousel-indicators li.active {
+    background-color: var(--dimgrey; )
+}
+
+.carousel-indicators {
+    bottom: -10px;
+    padding-bottom: 20px;
+}
+
+.carousel-inner .item img {
+    /*border: 2px solid #fff;*/
+    border: 2px solid --dimgrey;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.aboutsiobhan-caption {
+    padding-bottom: 70px;
+}
+
+.aboutsiobhan-caption h3 {
+    position: relative;
+    text-align: center;
+}
+
+.aboutsiobhan-caption h2 {
+    position: relative;
+    text-align: center;
+    color: --dimgrey;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.aboutsiobhan-caption h4 {
+    color: --dimgrey;
+}
+
+.aboutsiobhan-caption h4 span {
+    color: --dimgrey;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.aboutsiobhan-caption p {
+    color: --dimgrey;
+    line-height: 27px;
+    padding-top: 20px;
+}
+
+/* H7 is formatted with font color
+the same as the bg color.
+This is because extra text was added 
+to pad out some of the descriptions so that
+they are all the same length to avoid the 
+page jumping*/
+.aboutus-caption h7 {
+    color: rgba(143, 186, 239, 1);
+    /*blue*/
+}
+
+/******Reviews******/
+.reviews {
+    background-color: rgba(143, 186, 239, 1);
+    /*blue*/
+    padding-bottom: 20px;
+}
+
+.reviews-caption {
+    padding-bottom: 70px;
+}
+
+.reviews-caption h2 {
+    color: #0066ff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.reviews-caption h4 {
+    color: #0066ff;
+}
+
+.reviews-caption h4 span {
+    color: #fff;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* H7 is formatted with font color
+the same as the bg color.
+This is because extra text was added 
+to pad out some of the descriptions so that
+they are all the same length to avoid the 
+page jumping*/
+.reviews-caption h7 {
+    color: rgba(143, 186, 239, 1);
+    /*blue*/
+}
+
+.reviews-caption p {
+    color: #fff;
+    line-height: 27px;
+    padding-top: 20px;
+}
+
+.social-icons {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.social-icons ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social-icons ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+}
+
+.social-icons ul li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #9d9d9d;
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    line-height: 49px;
+    color: #0066ff;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.social-icons ul li a:hover {
+    background-color: #0066ff;
+    border: 1px solid #0066ff;
+    color: #fff;
+}
+
+.social-icons ul li a i {
+    font-size: 20px;
+}
+
+/****************ContactUs**************/
+.contact-us {
+    /*background-color: rgba(252, 150, 200, 1);*/
+    background-color: var(--green);
+}
+
+.contact-us-form .form-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    line-height: 21px;
+    color: var(--dimgrey);
+    /*background-color: transparent;*/
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    opacity: .8;
+    outline: 0px !important;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.contact-us-inner-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-us-item {
+    position: relative;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+    text-align: center;
+    color: --dimgrey;
+}
+
+.contact-us-icon {
+    position: absolute;
+    top: -8px;
+    font-size: 30px;
+    color: --dimgrey;
+    /*color: white;*/
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+/* ========= handle links ============= */
+/* unvisited link */
+a:link {
+    color: var(--dimgrey);
+}
+
+/* visited link */
+a:visited {
+    color: var(--dimgrey);
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+/* ========= handle links ============= */
+/* ========= app store badges ============= */
+.app-store-badges {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* ========= Footer ============= */
+.footer {
+    background-color: #1a1a1a;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    border-bottom: 3px solid #0066ff;
+}
+
+#copyright {
+    width: 50%;
+}
+
+#copyright p {
+    color: #8C8B8A;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#copyright p a {
+    text-decoration: none;
+    color: #0066ff;
+}
+
+.scroll-top {
+    text-align: right;
+}
+
+.scroll-top a {
+    background-color: #0066ff;
+    padding: 25px;
+}
+
+.scroll-top a i {
+    color: #fff;
+    font-size: 25px;
+}

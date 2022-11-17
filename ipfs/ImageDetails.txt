@@ -1,0 +1,10 @@
+v1 CID, English_Word, Spanish_Word, Gender
+"bafybeihhgdrdk3obf45wpud4gyfar3xm2jk66qugvzetjxcdxsuiu7dt6y,banana,plátano,m"
+"bafybeie53yp563qpm2mcqlujrqos4vgmixkqxbiiszjw7y63ebnv24j4lq,clementine,clementina,f"
+"bafybeigv6halae6ef4a6rcgynr6djtebohv5cwfqbgd5b2asfww4ra7uui,grape,uva,f"
+"bafybeieqwqyfgryphxbp3q57j3fscatdforglkyyhejhxblvprbnsoonpu,lemon,limón,m"
+"bafybeibadqopoua4xzcpawstatlqwjhvmzlverarmc5vccolqm6c3ok5tm,melon,melón,m"
+"bafybeihljk7ramwafpcn7clsv4k4cc6ufup5k2kcxpqj26cftghkdv3ibi,peach,melocotón,m"
+"bafybeiempliha6qvsrrblgkefxrzbya6675yu7fti6nydxlrp2uzly5x3a,pineapple,piña,f"
+"bafybeicy56csgxpddtjjtqlcqrjxi6lk2epiyxclqomdphk5vldhvfy674,raisin,uva pasa,f"
+"bafybeiac3qq432h2kp5f7oxrzyctp7tfwfambvd52kbrfhwbtego75vbvm,strawberry,fresa,f"
