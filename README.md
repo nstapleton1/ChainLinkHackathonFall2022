@@ -7,8 +7,11 @@ Bring gamefied education to web3.  English speakers have difficulty identifying 
 ## Technologies Used
 
 Chainlink Aggregator for getting ETH/USD price feed
+
 IPFS for storing and retrieving picture content
+
 Brownie framework for Solidity development and testing
+
 Javascript for UI
 
 ## Tech Details
@@ -25,9 +28,9 @@ ChainLinkHackathonFall2022/blob/main/UX/js/index.js: handles the UI including re
 
 Use nodejs and web3.js to better connect UX to contract
 
-buffer download of images from IPFS to improve user experience
+Buffer download of images from IPFS to improve user experience
 
-create NFTs to reward users and allow access to other levels
+Create NFTs to reward users and allow access to other levels
 
-put entire website on IPFS
+Put entire website on IPFS
 
