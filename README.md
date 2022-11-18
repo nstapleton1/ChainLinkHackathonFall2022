@@ -32,5 +32,5 @@ Buffer download of images from IPFS to improve user experience
 
 Create NFTs to reward users and allow access to other levels
 
-Put entire website on IPFS
+Host entire website on IPFS
 
